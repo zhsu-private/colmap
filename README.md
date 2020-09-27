@@ -128,3 +128,19 @@ affect the resulting COLMAP license.
     POSSIBILITY OF SUCH DAMAGE.
 
     Author: Johannes L. Schoenberger (jsch-at-demuc-dot-de)
+
+zhsu mac installation note:
+1. install ceres-solver from source: http://ceres-solver.org/installation.html#building-with-openmp-on-os-x
+
+tar zxf ceres-solver-1.14.0.tar.gz
+mkdir ceres-bin
+cd ceres-bin
+cmake ../ceres-solver-1.14.0
+make -j3
+make test
+# Optionally install Ceres, it can also be exported using CMake which
+# allows Ceres to be used without requiring installation, see the
+# documentation for the EXPORT_BUILD_DIR option for more information.
+make install
+
+2. Follow installation guide in this doc
