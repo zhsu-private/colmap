@@ -143,5 +143,14 @@ make install
 2. Follow installation guide in this doc
 
 # zhsu linux installation note:
-Important: ceres needs to be installed using instrucitons on  http://ceres-solver.org/installation.html#building-with-openmp-on-os-x.
+Important: ceres needs to be installed using instrucitons on  http://ceres-solver.org/installation.html#linux.
+
+For colmap check 2.0
+Install Glut:
+1. To install OpenGL libraries:
+sudo apt-get install mesa-utils
+2. To install freeGlut:
+sudo apt-get install freeglut3-dev
+
+Use 'make' instead of 'make -j' to avoid parallel build. Otherwise, memory might explode.
 
